@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Freelancer - Gert Mathyssen</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +28,22 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.2.min.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.2.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+            <style>
+              html {
+                width: 100%;
+                height: 100%;
+              }
+              body {
+                width: 90%;
+                height: 100%;
+                margin: auto;
+              }
+            </style>
 
 </head>
 
@@ -72,7 +88,7 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" src="img/_J6A0233-pROVIA100F.png" alt="">
                     <div class="intro-text">
                         <h1 class="name">Ing. Gert Mathyssen</h1>
                         <hr class="star-light">
@@ -100,7 +116,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
+                        <img src="img/portfolio/CNNW.png" class="img-responsive" alt="Cabin">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -110,7 +126,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
+                        <img src="img/portfolio/marketmagnifygray2.png" class="img-responsive" alt="Slice of cake">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -120,7 +136,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
+                        <img src="img/portfolio/bokeh_plotgray.png" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -130,19 +146,19 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
+                        <img src="img/portfolio/plot2_v3crop.png" class="img-responsive" alt="Game controller">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
-                    </a>
-                </div>
+                <!--<div class="col-sm-4 portfolio-item">-->
+                    <!--<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">-->
+                        <!--<div class="caption">-->
+                            <!--<div class="caption-content">-->
+                                <!--<i class="fa fa-search-plus fa-3x"></i>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<img src="img/portfolio/bokeh_plotbLGREEN.png" class="img-responsive" alt="Safe">-->
+                    <!--</a>-->
+                <!--</div>-->
             </div>
         </div>
     </section>
@@ -157,17 +173,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I'm super awesome! But not so awesome as my girlfriend</p>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <p>I'm a data scientist with 3+ years experience in Python, Excel and SQL. I hold a Master's degree in Electromechanical Engineering. While working as an EM Engineer (3+ years) I also gained experience in modelling by building models to calculate the ROI for renewable energy technology's (PV, CHP, heat pumps).
+                    </p>
                 </div>
-                <div class="col-lg-4">
-                    <p></p>
+                <div class="col-lg-5">
+                    <p>The last year I have been focusing on Machine learning (Scikit-learn and Tensorflow) and I'm really passionate about it, so it would me nice to do more ML projects!
+
+Python libraries I mainly use: Numpy, Pandas, Matplotlib, Plotly, Seaborn, Bokeh (server), Scikit-learn, Jupyter notebook, Django, Flask and many more.
+
+Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                 </div>
-                <!--<div class="col-lg-8 col-lg-offset-2 text-center">-->
-                    <!--<a href="#" class="btn btn-lg btn-outline">-->
-                        <!--<i class="fa fa-download"></i> Download Theme-->
-                    <!--</a>-->
-                </div>
+
             </div>
         </div>
     </section>
@@ -181,47 +198,12 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
+            <div class="row-contact">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="email">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="message">Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
+                    <center> Gert Mathyssen</center>
+                    <center> gert[a]mathyssen.be</center>
+                    <center> Tel: +324 97 17 22 98</center>
+
                 </div>
             </div>
         </div>
@@ -290,25 +272,26 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Neural network for object recognition</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your</p>
+
                             <iframe src="https://player.vimeo.com/video/211504616" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            <p><a href="https://vimeo.com/211504616">Demo of conventional neural network</a> from <a href="https://vimeo.com/user28223932">Gert math</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <!--<p><a href="https://vimeo.com/211504616">Demo of conventional neural network</a> from <a href="https://vimeo.com/user28223932">Gert math</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
+                            <p>Use this area of the page to describe your</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                                <!--<li>Client:-->
+                                    <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Date:-->
+                                    <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Service:-->
+                                    <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -329,24 +312,24 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Market Magnify</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/MM.png" class="img-responsive img-centered" alt="">
+                            <p>I've built this potential cash cow project, but unfortunately I had to shut it down because there was not enough traction. (the connection with the stock exchange is cancelled, so there is no new data) <a href="http://market-magnify.com">here</a>.</p>
+                            <!--<ul class="list-inline item-details">-->
+                                <!--<li>Client:-->
+                                    <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Date:-->
+                                    <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Service:-->
+                                    <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                            <!--</ul>-->
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -355,6 +338,73 @@
         </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+
+                            <div class="bk-root">
+                                <div class="plotdiv" id="05545c20-18f4-4387-8637-ea9967b33250"></div>
+                            </div>
+
+
+                            <div class="bk-root">
+                                <div class="plotdiv" id="ff4b7f8f-034d-483a-8ce6-7bf8e24ec576"></div>
+                            </div>
+
+                            <script type="text/javascript">
+                                Bokeh.$(function() {
+                                var docs_json = {"ba908a8d-616b-48b0-88a8-55ab29756e9f":{"roots":{"references":[{"attributes":{"data_source":{"id":"4a66dc1d-c513-4cfd-98de-934b596469f8","type":"ColumnDataSource"},"glyph":{"id":"6918ce60-43c8-445f-8833-3a9d8987b8bc","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"15fe2a43-5fbe-4a86-8046-80a6704940fd","type":"AnnularWedge"},"selection_glyph":null},"id":"2ec86843-3860-46ad-a2ad-6bf862cb93c6","type":"GlyphRenderer"},{"attributes":{"text_align":"center","text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"11pt"},"x":{"field":"x"},"y":{"field":"y"}},"id":"99c3fa54-6e62-4c55-b36a-1bd00a426014","type":"Text"},{"attributes":{"callback":null,"column_names":["outer_radius","start_angle","end_angle"],"data":{"end_angle":[1.4092287046102785,1.1579012923230951,0.9065738800359118,0.6552464677487282,0.4039190554615448,0.1525916431743614,-0.09873576911282217,-0.35006318140000575,-0.6013905936871891,-0.8527180059743726,-1.104045418261556,-1.3553728305487398,-1.6067002428359232,-1.8580276551231065,-2.10935506741029,-2.360682479697473,-2.612009891984657,-2.8633373042718406,-3.1146647165590235,-3.3659921288462074,-3.6173195411333903,-3.8686469534205745,-4.119974365707758,-4.371301777994941],"outer_radius":[199.77443609022555,239.87468671679198,249.89974937343356,139.62406015037595,264.937343358396,234.8621553884712,284.9874686716792,139.62406015037595,274.9624060150376,229.84962406015035,124.58646616541353,189.74937343358397,214.81203007518798,169.69924812030075,259.9248120300752,164.68671679197996,229.84962406015035,144.63659147869674,264.937343358396,194.76190476190476,284.9874686716792,224.83709273182956,104.53634085213034,179.72431077694236],"start_angle":[1.2297091244051475,0.978381712117964,0.7270542998307806,0.4757268875435972,0.22439947525641374,-0.02692793703076963,-0.2782553493179532,-0.5295827616051368,-0.7809101738923202,-1.0322375861795037,-1.283564998466687,-1.5348924107538708,-1.7862198230410542,-2.0375472353282373,-2.288874647615421,-2.540202059902604,-2.791529472189788,-3.0428568844769717,-3.2941842967641546,-3.5455117090513384,-3.7968391213385213,-4.0481665336257056,-4.299493945912889,-4.550821358200072]}},"id":"0a87c444-b875-4d0a-8802-2c675d8e2b6d","type":"ColumnDataSource"},{"attributes":{"text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"9pt"},"x":{"value":-71},"y":{"field":"y"}},"id":"96452dcb-0037-4168-96b0-7ce221931fd1","type":"Text"},{"attributes":{"plot":null,"text":""},"id":"8ce1921f-19f4-4d30-b808-be9ad23a4bd5","type":"Title"},{"attributes":{"callback":null,"column_names":["y","text"],"data":{"text":["1: Trifft voll und ganz zu","2: Trifft eher zu","3: Trifft eher nicht zu","4: Trifft \u00fcberhaupt nicht zu"],"y":[30,10,-10,-30,-50,-70]}},"id":"33786250-aed1-48de-8b43-73b023e5f430","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"}},"id":"5b5aab1c-bac3-457e-bf2e-fe494599da9f","type":"SaveTool"},{"attributes":{"callback":null,"column_names":["y","text","x"],"data":{"text":[1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4],"x":[74.60696614945643,144.52610223051462,205.3641317786066,253.29837765060455,285.3169548885461,299.4080185284815,294.6861752186066,271.4481157398058,231.15397283273674,176.33557568774197,110.43736580540343,37.59997006929121,-37.59997006929131,-110.43736580540339,-176.3355756877421,-231.15397283273686,-271.4481157398059,-294.68617521860665,-299.4080185284815,-285.316954888546,-253.2983776506045,-205.3641317786065,-144.52610223051437,-74.60696614945633],"y":[290.5749483385893,262.89200401315907,218.69058822642347,160.74803849369897,92.7050983124842,18.83715585879402,-56.21439437571741,-127.73378746952184,-191.22719692460691,-242.7050983124842,-278.9329457664754,-297.6344103943434,-297.6344103943433,-278.9329457664754,-242.7050983124841,-191.22719692460686,-127.73378746952163,-56.214394375717106,18.837155858794134,92.70509831248445,160.74803849369903,218.69058822642356,262.8920040131592,290.57494833858937]}},"id":"64ef6dd6-1d7b-4010-9139-79460e4c3522","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"7432e59c-2c0b-4feb-982b-f3f1b648af0f","type":"ColumnDataSource"},"glyph":{"id":"03a2c4c7-ba29-452c-ba1d-b86e243869e8","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"779655f7-aaf1-4e79-bbc3-d8e75731f480","type":"Text"},"selection_glyph":null},"id":"584bae8b-0c27-456c-8c3e-116ab992f44d","type":"GlyphRenderer"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":90},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"field":"outer_radius","units":"data"},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"9f478bad-edf3-458a-9cb8-0a9adb630873","type":"AnnularWedge"},{"attributes":{"data_source":{"id":"9f245c4a-8194-44ad-9746-a6556a9f6955","type":"ColumnDataSource"},"glyph":{"id":"8b8ee63e-7d34-44e3-b7c1-35d2734cc9cb","type":"Circle"},"hover_glyph":null,"nonselection_glyph":{"id":"ebc1ef57-232d-4727-8439-ee4516151522","type":"Circle"},"selection_glyph":null},"id":"92499567-43f8-4d73-accb-7c6937064596","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"33786250-aed1-48de-8b43-73b023e5f430","type":"ColumnDataSource"},"glyph":{"id":"1c79729b-4735-42b0-b13b-2bc156a4975e","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"96452dcb-0037-4168-96b0-7ce221931fd1","type":"Text"},"selection_glyph":null},"id":"5f6dc9ec-eb46-48e2-953e-5d7df7aef64c","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["radius"],"data":{"radius":[89.49874686716792,139.62406015037595,189.74937343358397,239.87468671679198,290.0]}},"id":"9f245c4a-8194-44ad-9746-a6556a9f6955","type":"ColumnDataSource"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"field":"fill_color"},"inner_radius":{"units":"data","value":90},"line_color":{"field":"line_color"},"outer_radius":{"units":"data","value":290},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"6918ce60-43c8-445f-8833-3a9d8987b8bc","type":"AnnularWedge"},{"attributes":{"text_align":"center","text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"23pt"},"x":{"value":0},"y":{"value":340}},"id":"68c2a1a0-d653-4e65-bb46-56674dd24815","type":"Text"},{"attributes":{"callback":null,"column_names":["y","text"],"data":{"text":["0 %","10 %","20 %","30 %","40 %"],"y":[89.49874686716792,139.62406015037595,189.74937343358397,239.87468671679198,290.0]}},"id":"7432e59c-2c0b-4feb-982b-f3f1b648af0f","type":"ColumnDataSource"},{"attributes":{"text_align":"center","text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"11pt"},"x":{"field":"x"},"y":{"field":"y"}},"id":"6d6807f7-d556-48fc-86c4-67016a03a659","type":"Text"},{"attributes":{"text_align":"center","text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"8pt"},"x":{"value":0},"y":{"field":"y"}},"id":"779655f7-aaf1-4e79-bbc3-d8e75731f480","type":"Text"},{"attributes":{"data_source":{"id":"0d3b17dd-3a46-4f40-9d99-5ea77368aca6","type":"ColumnDataSource"},"glyph":{"id":"452a35ed-4c66-4e4b-a509-8281b8f0f268","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"e73b72dc-0d45-42ff-b185-aef20671eedc","type":"AnnularWedge"},"selection_glyph":null},"id":"d7a749b2-6ab6-4fc0-9b90-9e7056101e4b","type":"GlyphRenderer"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"value":"black"},"inner_radius":{"units":"data","value":80},"outer_radius":{"units":"data","value":300},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"452a35ed-4c66-4e4b-a509-8281b8f0f268","type":"AnnularWedge"},{"attributes":{},"id":"1bd6131c-77af-4a15-9b57-396299c16bfc","type":"ToolEvents"},{"attributes":{"plot":{"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"}},"id":"7f1c1b50-11dc-4e58-97b0-7e7e0b53e465","type":"PanTool"},{"attributes":{"data_source":{"id":"a2c1c2ab-560b-41b0-9a2f-69d543ddb1e7","type":"ColumnDataSource"},"glyph":{"id":"68c2a1a0-d653-4e65-bb46-56674dd24815","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"2d6c1a94-f94e-4a0f-855c-dd4afdf79bf7","type":"Text"},"selection_glyph":null},"id":"7bd730e2-0e91-48e9-b146-e39b61ccf39e","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["start_angle","end_angle","line_color","fill_color"],"data":{"end_angle":[1.4451326206513049,1.1938052083641213,0.9424777960769379,0.6911503837897545,0.439822971502571,0.18849555921538763,-0.06283185307179595,-0.31415926535897953,-0.5654866776461629,-0.8168140899333463,-1.0681415022205296,-1.3194689145077134,-1.5707963267948968,-1.8221237390820801,-2.073451151369264,-2.324778563656447,-2.576105975943631,-2.8274333882308147,-3.0787608005179976,-3.3300882128051814,-3.5814156250923643,-3.832743037379548,-4.084070449666732,-4.335397861953915],"fill_color":["#2c4577","#2c4577","#2c4577","#2c4577","#4166b0","#4166b0","#4166b0","#4166b0","#7592cc","#7592cc","#7592cc","#7592cc","#aebfe1","#aebfe1","#aebfe1","#aebfe1","#d9e1f1","#d9e1f1","#d9e1f1","#d9e1f1","#f6f8fb","#f6f8fb","#f6f8fb","#f6f8fb"],"line_color":["#2c4577","#2c4577","#2c4577","#2c4577","#4166b0","#4166b0","#4166b0","#4166b0","#7592cc","#7592cc","#7592cc","#7592cc","#aebfe1","#aebfe1","#aebfe1","#aebfe1","#d9e1f1","#d9e1f1","#d9e1f1","#d9e1f1","#f6f8fb","#f6f8fb","#f6f8fb","#f6f8fb"],"start_angle":[1.1938052083641213,0.9424777960769378,0.6911503837897545,0.439822971502571,0.18849555921538752,-0.06283185307179584,-0.3141592653589794,-0.565486677646163,-0.8168140899333464,-1.0681415022205298,-1.3194689145077132,-1.570796326794897,-1.8221237390820804,-2.0734511513692637,-2.3247785636564475,-2.5761059759436304,-2.8274333882308142,-3.078760800517998,-3.330088212805181,-3.5814156250923648,-3.8327430373795477,-4.084070449666732,-4.335397861953916,-4.586725274241099]}},"id":"4a66dc1d-c513-4cfd-98de-934b596469f8","type":"ColumnDataSource"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":80},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"units":"data","value":300},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"e73b72dc-0d45-42ff-b185-aef20671eedc","type":"AnnularWedge"},{"attributes":{"callback":null,"column_names":["text"],"data":{"text":["Schutz von Gesundheitsdaten"]}},"id":"a2c1c2ab-560b-41b0-9a2f-69d543ddb1e7","type":"ColumnDataSource"},{"attributes":{"fill_color":{"value":null},"line_color":{"value":"white"},"radius":{"field":"radius","units":"data"},"x":{"value":0},"y":{"value":0}},"id":"8b8ee63e-7d34-44e3-b7c1-35d2734cc9cb","type":"Circle"},{"attributes":{"plot":{"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"}},"id":"de875c7f-cf8f-46ce-ace9-37aebed7dc9b","type":"WheelZoomTool"},{"attributes":{"text_align":"center","text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"23pt"},"x":{"value":0},"y":{"value":340}},"id":"2d6c1a94-f94e-4a0f-855c-dd4afdf79bf7","type":"Text"},{"attributes":{"callback":null,"end":420,"start":-420},"id":"4da81b35-1f6e-4a2a-bff7-52b12360de6d","type":"Range1d"},{"attributes":{"overlay":{"id":"8b9273ab-50bb-4f3b-b3f0-17daae524ecb","type":"BoxAnnotation"},"plot":{"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"}},"id":"11dec36a-d7d4-46f0-a7f0-67811538ce0a","type":"BoxZoomTool"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","logo":null,"tools":[{"id":"7f1c1b50-11dc-4e58-97b0-7e7e0b53e465","type":"PanTool"},{"id":"de875c7f-cf8f-46ce-ace9-37aebed7dc9b","type":"WheelZoomTool"},{"id":"11dec36a-d7d4-46f0-a7f0-67811538ce0a","type":"BoxZoomTool"},{"id":"5b5aab1c-bac3-457e-bf2e-fe494599da9f","type":"SaveTool"},{"id":"bf95fcda-1a6e-48b3-9729-09792a0bc1b7","type":"ResetTool"},{"id":"a88cc1e7-0f68-4767-a532-362558feaa64","type":"HelpTool"}]},"id":"d4fb28a6-d331-4258-8761-b1804da31436","type":"Toolbar"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":90},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"units":"data","value":290},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"15fe2a43-5fbe-4a86-8046-80a6704940fd","type":"AnnularWedge"},{"attributes":{"callback":null,"end":420,"start":-420},"id":"ee63a5e8-ae07-4aa3-9b6f-339093fb0b65","type":"Range1d"},{"attributes":{"data_source":{"id":"64ef6dd6-1d7b-4010-9139-79460e4c3522","type":"ColumnDataSource"},"glyph":{"id":"99c3fa54-6e62-4c55-b36a-1bd00a426014","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"6d6807f7-d556-48fc-86c4-67016a03a659","type":"Text"},"selection_glyph":null},"id":"11ce6760-338b-4c77-9088-21cec6abb69c","type":"GlyphRenderer"},{"attributes":{"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"9pt"},"x":{"value":-71},"y":{"field":"y"}},"id":"1c79729b-4735-42b0-b13b-2bc156a4975e","type":"Text"},{"attributes":{"plot":{"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"}},"id":"bf95fcda-1a6e-48b3-9729-09792a0bc1b7","type":"ResetTool"},{"attributes":{"text_align":"center","text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"8pt"},"x":{"value":0},"y":{"field":"y"}},"id":"03a2c4c7-ba29-452c-ba1d-b86e243869e8","type":"Text"},{"attributes":{"border_fill_color":{"value":"#f0e1d2"},"min_border":0,"outline_line_color":{"value":null},"plot_height":800,"plot_width":800,"renderers":[{"id":"8b9273ab-50bb-4f3b-b3f0-17daae524ecb","type":"BoxAnnotation"},{"id":"7bd730e2-0e91-48e9-b146-e39b61ccf39e","type":"GlyphRenderer"},{"id":"2ec86843-3860-46ad-a2ad-6bf862cb93c6","type":"GlyphRenderer"},{"id":"bc5bd4a0-fbb7-4637-96e9-657e80816a7d","type":"GlyphRenderer"},{"id":"92499567-43f8-4d73-accb-7c6937064596","type":"GlyphRenderer"},{"id":"584bae8b-0c27-456c-8c3e-116ab992f44d","type":"GlyphRenderer"},{"id":"d7a749b2-6ab6-4fc0-9b90-9e7056101e4b","type":"GlyphRenderer"},{"id":"11ce6760-338b-4c77-9088-21cec6abb69c","type":"GlyphRenderer"},{"id":"5f6dc9ec-eb46-48e2-953e-5d7df7aef64c","type":"GlyphRenderer"}],"title":{"id":"8ce1921f-19f4-4d30-b808-be9ad23a4bd5","type":"Title"},"tool_events":{"id":"1bd6131c-77af-4a15-9b57-396299c16bfc","type":"ToolEvents"},"toolbar":{"id":"d4fb28a6-d331-4258-8761-b1804da31436","type":"Toolbar"},"toolbar_sticky":false,"x_range":{"id":"4da81b35-1f6e-4a2a-bff7-52b12360de6d","type":"Range1d"},"y_range":{"id":"ee63a5e8-ae07-4aa3-9b6f-339093fb0b65","type":"Range1d"}},"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"},{"attributes":{"data_source":{"id":"0a87c444-b875-4d0a-8802-2c675d8e2b6d","type":"ColumnDataSource"},"glyph":{"id":"f820c0ea-c629-4840-9a1f-4142f6eb7ce7","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"9f478bad-edf3-458a-9cb8-0a9adb630873","type":"AnnularWedge"},"selection_glyph":null},"id":"bc5bd4a0-fbb7-4637-96e9-657e80816a7d","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"91c94238-f61e-4acf-9258-7077eb9361ba","subtype":"Figure","type":"Plot"}},"id":"a88cc1e7-0f68-4767-a532-362558feaa64","type":"HelpTool"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"value":"#17243e"},"inner_radius":{"units":"data","value":90},"line_color":{"value":"#17243e"},"outer_radius":{"field":"outer_radius","units":"data"},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"f820c0ea-c629-4840-9a1f-4142f6eb7ce7","type":"AnnularWedge"},{"attributes":{"callback":null,"column_names":["start_angle","end_angle"],"data":{"end_angle":[1.1938052083641213,0.9424777960769378,0.6911503837897545,0.439822971502571,0.18849555921538752,-0.06283185307179584,-0.3141592653589794,-0.565486677646163,-0.8168140899333464,-1.0681415022205298,-1.3194689145077132,-1.570796326794897,-1.8221237390820804,-2.0734511513692637,-2.3247785636564475,-2.5761059759436304,-2.8274333882308142,-3.078760800517998,-3.330088212805181,-3.5814156250923648,-3.8327430373795477,-4.084070449666732,-4.335397861953916,-4.586725274241099],"start_angle":[1.1938052083641213,0.9424777960769378,0.6911503837897545,0.439822971502571,0.18849555921538752,-0.06283185307179584,-0.3141592653589794,-0.565486677646163,-0.8168140899333464,-1.0681415022205298,-1.3194689145077132,-1.570796326794897,-1.8221237390820804,-2.0734511513692637,-2.3247785636564475,-2.5761059759436304,-2.8274333882308142,-3.078760800517998,-3.330088212805181,-3.5814156250923648,-3.8327430373795477,-4.084070449666732,-4.335397861953916,-4.586725274241099]}},"id":"0d3b17dd-3a46-4f40-9d99-5ea77368aca6","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"8b9273ab-50bb-4f3b-b3f0-17daae524ecb","type":"BoxAnnotation"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"radius":{"field":"radius","units":"data"},"x":{"value":0},"y":{"value":0}},"id":"ebc1ef57-232d-4727-8439-ee4516151522","type":"Circle"}],"root_ids":["91c94238-f61e-4acf-9258-7077eb9361ba"]},"title":"Bokeh Application","version":"0.12.0"}};
+                                var render_items = [{"docid":"ba908a8d-616b-48b0-88a8-55ab29756e9f","elementid":"ff4b7f8f-034d-483a-8ce6-7bf8e24ec576","modelid":"91c94238-f61e-4acf-9258-7077eb9361ba"}];
+
+                                Bokeh.embed.embed_items(docs_json, render_items);
+                            });
+                            </script>
+
+                            <script type="text/javascript">
+                                Bokeh.$(function() {
+                                var docs_json = {"37033d24-c2e3-49cf-86a4-e7790e7ff204":{"roots":{"references":[{"attributes":{"callback":null,"column_names":["radius"],"data":{"radius":[89.6661101836394,123.0550918196995,156.44407345575962,189.8330550918197,223.2220367278798,256.61101836393993,290.0]}},"id":"d2c0b7e8-010d-45fa-a2b8-34fedfb5b259","type":"ColumnDataSource"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":80},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"units":"data","value":300},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"b62d23a3-e0eb-4211-a08e-a534f14c0a09","type":"AnnularWedge"},{"attributes":{"callback":null,"end":420,"start":-420},"id":"e4a4d9ea-bb24-47c8-8fb6-39626df89c8f","type":"Range1d"},{"attributes":{"callback":null,"column_names":["y","x","text"],"data":{"text":["Krank","Gesund"],"x":[-15,-15,-15],"y":[18,0,-18]}},"id":"416ae4ea-60bd-415a-9311-b063255010f8","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","logo":null,"tools":[{"id":"a39643c0-0972-4329-87ca-fd648db1f3f7","type":"PanTool"},{"id":"6915a8a7-8fd0-4275-a373-e890c73faa14","type":"WheelZoomTool"},{"id":"76d9b446-99a9-4182-a10b-e625479bd7b3","type":"BoxZoomTool"},{"id":"353035fd-69a3-47f5-a90b-8bd88f6e894f","type":"SaveTool"},{"id":"88bd28da-c1ab-464e-84e3-813bf1a9c2cf","type":"ResetTool"},{"id":"d00716c1-a9fd-487e-8e27-47da0caa3287","type":"HelpTool"}]},"id":"dec59583-fbe0-45f5-b0a1-5b6ea69e0999","type":"Toolbar"},{"attributes":{"text_align":"center","text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"8pt"},"x":{"value":0},"y":{"field":"y"}},"id":"f8172175-186c-453a-b1ec-5b59128562d3","type":"Text"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"field":"fill_color"},"inner_radius":{"units":"data","value":90},"line_color":{"field":"line_color"},"outer_radius":{"units":"data","value":290},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"b9bfd69a-08a6-49f6-bcb0-aa83f11c4020","type":"AnnularWedge"},{"attributes":{"data_source":{"id":"0b0c32f7-0995-433b-98e5-836517bc48e4","type":"ColumnDataSource"},"glyph":{"id":"f8172175-186c-453a-b1ec-5b59128562d3","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"4ab14ecd-24e4-4f4f-9db2-8ac4175f5832","type":"Text"},"selection_glyph":null},"id":"c1cf6b38-6423-4528-94c0-c5f39a3a02b7","type":"GlyphRenderer"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":90},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"field":"outer_radius","units":"data"},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"e678241c-f2ae-4816-914b-3ceff5069f6d","type":"AnnularWedge"},{"attributes":{"plot":{"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"}},"id":"a39643c0-0972-4329-87ca-fd648db1f3f7","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"radius":{"field":"radius","units":"data"},"x":{"value":0},"y":{"value":0}},"id":"0b9872bd-ba10-44d3-a252-60f4a6a2d132","type":"Circle"},{"attributes":{"data_source":{"id":"1326e949-601b-4c52-bd43-d91fff00a702","type":"ColumnDataSource"},"glyph":{"id":"5658479d-747c-45be-9d09-b940793e5ef1","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"4dc4a14f-dd7f-444c-8390-dd7e40561861","type":"AnnularWedge"},"selection_glyph":null},"id":"fed8777f-59fa-4f47-ad41-fe948456ad32","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"d2c0b7e8-010d-45fa-a2b8-34fedfb5b259","type":"ColumnDataSource"},"glyph":{"id":"6a43ee8d-1f21-4047-93c2-8bafd7e706cb","type":"Circle"},"hover_glyph":null,"nonselection_glyph":{"id":"0b9872bd-ba10-44d3-a252-60f4a6a2d132","type":"Circle"},"selection_glyph":null},"id":"7410f982-87c9-4be9-a614-bba135381c7b","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["outer_radius","start_angle","end_angle"],"data":{"end_angle":[1.3015169564872,1.0501895442000164,0.7988621319128331,0.5475347196256496,0.2962073073384661,0.04487989505128279,-0.2064475172359008,-0.4577749295230844,-0.7091023418102678,-0.9604297540974512,-1.2117571663846345,-1.4630845786718183,-1.7144119909590017,-1.965739403246185,-2.217066815533369,-2.4683942278205517,-2.7197216401077355,-2.9710490523949193,-3.2223764646821023,-3.473703876969286,-3.725031289256469,-3.9763587015436532,-4.2276861138308375,-4.47901352611802],"outer_radius":[149.76627712854759,196.51085141903172,133.07178631051752,113.03839732888147,239.91652754590984,263.2888146911519,143.08848080133555,123.0550918196995,199.84974958263774,253.2721202003339,113.03839732888147,139.74958263772956,149.76627712854759,103.02170283806345,149.76627712854759,129.73288814691153,163.1218697829716,209.86644407345574,159.7829716193656,106.36060100166945,156.44407345575962,239.91652754590984,183.15525876460768,149.76627712854759],"start_angle":[1.2297091244051475,0.978381712117964,0.7270542998307806,0.4757268875435972,0.22439947525641374,-0.02692793703076963,-0.2782553493179532,-0.5295827616051368,-0.7809101738923202,-1.0322375861795037,-1.283564998466687,-1.5348924107538708,-1.7862198230410542,-2.0375472353282373,-2.288874647615421,-2.540202059902604,-2.791529472189788,-3.0428568844769717,-3.2941842967641546,-3.5455117090513384,-3.7968391213385213,-4.0481665336257056,-4.299493945912889,-4.550821358200072]}},"id":"2cfb2b64-bb48-4214-bb63-3136a011c3df","type":"ColumnDataSource"},{"attributes":{"callback":null,"column_names":["x","y","line_color","fill_color"],"data":{"fill_color":["#000000","#206F1D"],"line_color":["#000000","#206F1D"],"x":[-40,-40,-40],"y":[18,0,-18]}},"id":"3309298c-064d-4229-9c23-8a513b976aab","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"d42acf38-05c4-470f-abce-3c34bf145d4e","type":"ColumnDataSource"},"glyph":{"id":"1e3586e7-634d-437d-9185-30e104cd4f7e","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"7aa3b087-ce85-45a4-aabc-95e7777c0e50","type":"Text"},"selection_glyph":null},"id":"fff5e5f4-08ad-4dbb-96bd-9c987476cc77","type":"GlyphRenderer"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":90},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"units":"data","value":290},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"8b8fdd3f-38a5-4c33-b92c-b9ae934d0bc0","type":"AnnularWedge"},{"attributes":{"callback":null,"column_names":["outer_radius","start_angle","end_angle"],"data":{"end_angle":[1.4092287046102785,1.1579012923230951,0.9065738800359118,0.6552464677487282,0.4039190554615448,0.1525916431743614,-0.09873576911282217,-0.35006318140000575,-0.6013905936871891,-0.8527180059743726,-1.104045418261556,-1.3553728305487398,-1.6067002428359232,-1.8580276551231065,-2.10935506741029,-2.360682479697473,-2.612009891984657,-2.8633373042718406,-3.1146647165590235,-3.3659921288462074,-3.6173195411333903,-3.8686469534205745,-4.119974365707758,-4.371301777994941],"outer_radius":[189.8330550918197,286.661101836394,123.0550918196995,106.36060100166945,226.5609348914858,173.13856427378965,119.7161936560935,96.34390651085143,236.57762938230383,183.15525876460768,173.13856427378965,123.0550918196995,146.42737896494157,166.46076794657762,209.86644407345574,163.1218697829716,159.7829716193656,269.96661101836395,163.1218697829716,129.73288814691153,143.08848080133555,223.2220367278798,176.47746243739567,133.07178631051752],"start_angle":[1.3374208725282262,1.0860934602410426,0.8347660479538593,0.5834386356666759,0.3321112233794924,0.080783811092309,-0.17054360119487458,-0.42187101348205813,-0.6731984257692415,-0.924525838056425,-1.1758532503436083,-1.4271806626307921,-1.6785080749179755,-1.9298354872051589,-2.181162899492343,-2.432490311779526,-2.6838177240667096,-2.9351451363538934,-3.1864725486410763,-3.43779996092826,-3.689127373215443,-3.9404547855026273,-4.191782197789811,-4.443109610076994]}},"id":"1326e949-601b-4c52-bd43-d91fff00a702","type":"ColumnDataSource"},{"attributes":{"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"9pt"},"x":{"field":"x"},"y":{"field":"y"}},"id":"c224edcf-cdfc-4da0-86a1-af4f11374f8d","type":"Text"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"value":"#000000"},"inner_radius":{"units":"data","value":90},"line_color":{"value":"#000000"},"outer_radius":{"field":"outer_radius","units":"data"},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"5658479d-747c-45be-9d09-b940793e5ef1","type":"AnnularWedge"},{"attributes":{"plot":null,"text":""},"id":"23cb041e-b6df-40a2-ae87-e72ff1b8c44c","type":"Title"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"value":"black"},"inner_radius":{"units":"data","value":80},"outer_radius":{"units":"data","value":300},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"452516d2-ae3d-4b0c-a5b1-c9112fceac26","type":"AnnularWedge"},{"attributes":{"data_source":{"id":"2cfb2b64-bb48-4214-bb63-3136a011c3df","type":"ColumnDataSource"},"glyph":{"id":"16b30644-9110-4b27-b150-d53a38e8f0fa","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"e678241c-f2ae-4816-914b-3ceff5069f6d","type":"AnnularWedge"},"selection_glyph":null},"id":"297d0090-a64c-4978-9034-27a40d772826","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"7560469d-65d5-47c2-a994-cda991500957","type":"ColumnDataSource"},"glyph":{"id":"8ec6ef6a-59c8-4bb0-afbc-c3bce47aae4b","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"73958cea-b421-4b85-886b-83ab4e7b048f","type":"Text"},"selection_glyph":null},"id":"f6663e05-72e4-4b75-8a5f-807e2a77190b","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["y","angle","text","x"],"data":{"angle":[1.3194689145077132,1.0681415022205296,0.8168140899333463,0.5654866776461627,0.31415926535897926,0.0628318530717959,-0.1884955592153877,-0.43982297150257127,-0.6911503837897546,-0.9424777960769379,-1.1938052083641213,-1.445132620651305,1.4451326206513047,1.1938052083641213,0.942477796076937,0.6911503837897541,0.4398229715025703,0.18849555921538652,-0.0628318530717964,-0.3141592653589802,-0.5654866776461631,-0.8168140899333469,-1.0681415022205307,-1.3194689145077136],"text":["completely agree","mostly agree","mostly disagree","completely disagree","completely agree","mostly agree","mostly disagree","completely disagree","completely agree","mostly agree","mostly disagree","completely disagree","completely disagree","mostly disagree","mostly agree","completely agree","completely disagree","mostly disagree","mostly agree","completely agree","completely disagree","mostly disagree","mostly agree","completely agree"],"x":[82.06766276440206,158.97871245356606,225.9005449564673,278.628215415665,313.8486503774007,329.34882038132963,324.15479274046726,298.59292731378645,254.2693701160104,193.96913325651616,121.48110238594377,41.35996707622033,-41.35996707622044,-121.48110238594373,-193.96913325651633,-254.26937011601052,-298.59292731378656,-324.1547927404673,-329.34882038132963,-313.8486503774006,-278.62821541566495,-225.90054495646714,-158.9787124535658,-82.06766276440196],"y":[319.63244317244823,289.18120441447496,240.5596470490658,176.82284234306886,101.97560814373263,20.720871444673424,-61.835833813289156,-140.50716621647402,-210.3499166170676,-266.97560814373264,-306.82624034312295,-327.3978514337777,-327.39785143377765,-306.82624034312295,-266.97560814373253,-210.34991661706755,-140.5071662164738,-61.835833813288815,20.720871444673545,101.9756081437329,176.82284234306894,240.55964704906592,289.18120441447513,319.6324431724483]}},"id":"7560469d-65d5-47c2-a994-cda991500957","type":"ColumnDataSource"},{"attributes":{},"id":"2ca2292c-ff6a-407b-a327-cc8471e55d6f","type":"ToolEvents"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"176601d0-d918-46bb-a331-89c360c1ae28","type":"BoxAnnotation"},{"attributes":{"callback":null,"column_names":["start_angle","end_angle"],"data":{"end_angle":[1.1938052083641213,0.9424777960769378,0.6911503837897545,0.439822971502571,0.18849555921538752,-0.06283185307179584,-0.3141592653589794,-0.565486677646163,-0.8168140899333464,-1.0681415022205298,-1.3194689145077132,-1.570796326794897,-1.8221237390820804,-2.0734511513692637,-2.3247785636564475,-2.5761059759436304,-2.8274333882308142,-3.078760800517998,-3.330088212805181,-3.5814156250923648,-3.8327430373795477,-4.084070449666732,-4.335397861953916,-4.586725274241099],"start_angle":[1.1938052083641213,0.9424777960769378,0.6911503837897545,0.439822971502571,0.18849555921538752,-0.06283185307179584,-0.3141592653589794,-0.565486677646163,-0.8168140899333464,-1.0681415022205298,-1.3194689145077132,-1.570796326794897,-1.8221237390820804,-2.0734511513692637,-2.3247785636564475,-2.5761059759436304,-2.8274333882308142,-3.078760800517998,-3.330088212805181,-3.5814156250923648,-3.8327430373795477,-4.084070449666732,-4.335397861953916,-4.586725274241099]}},"id":"c0c741ad-663a-4c8e-9609-882ec29079e8","type":"ColumnDataSource"},{"attributes":{"callback":null,"column_names":["start_angle","end_angle","line_color","fill_color"],"data":{"end_angle":[1.4451326206513049,1.1938052083641213,0.9424777960769379,0.6911503837897545,0.439822971502571,0.18849555921538763,-0.06283185307179595,-0.31415926535897953,-0.5654866776461629,-0.8168140899333463,-1.0681415022205296,-1.3194689145077134,-1.5707963267948968,-1.8221237390820801,-2.073451151369264,-2.324778563656447,-2.576105975943631,-2.8274333882308147,-3.0787608005179976,-3.3300882128051814,-3.5814156250923643,-3.832743037379548,-4.084070449666732,-4.335397861953915],"fill_color":["#2c4577","#2c4577","#2c4577","#2c4577","#4166b0","#4166b0","#4166b0","#4166b0","#7592cc","#7592cc","#7592cc","#7592cc","#aebfe1","#aebfe1","#aebfe1","#aebfe1","#d9e1f1","#d9e1f1","#d9e1f1","#d9e1f1","#f6f8fb","#f6f8fb","#f6f8fb","#f6f8fb"],"line_color":["#2c4577","#2c4577","#2c4577","#2c4577","#4166b0","#4166b0","#4166b0","#4166b0","#7592cc","#7592cc","#7592cc","#7592cc","#aebfe1","#aebfe1","#aebfe1","#aebfe1","#d9e1f1","#d9e1f1","#d9e1f1","#d9e1f1","#f6f8fb","#f6f8fb","#f6f8fb","#f6f8fb"],"start_angle":[1.1938052083641213,0.9424777960769378,0.6911503837897545,0.439822971502571,0.18849555921538752,-0.06283185307179584,-0.3141592653589794,-0.565486677646163,-0.8168140899333464,-1.0681415022205298,-1.3194689145077132,-1.570796326794897,-1.8221237390820804,-2.0734511513692637,-2.3247785636564475,-2.5761059759436304,-2.8274333882308142,-3.078760800517998,-3.330088212805181,-3.5814156250923648,-3.8327430373795477,-4.084070449666732,-4.335397861953916,-4.586725274241099]}},"id":"d5db5267-186a-4da3-8fa2-2962fda2b51f","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"d5db5267-186a-4da3-8fa2-2962fda2b51f","type":"ColumnDataSource"},"glyph":{"id":"b9bfd69a-08a6-49f6-bcb0-aa83f11c4020","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"8b8fdd3f-38a5-4c33-b92c-b9ae934d0bc0","type":"AnnularWedge"},"selection_glyph":null},"id":"163fd350-d43c-4802-bdf8-881e3f8535a4","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"}},"id":"353035fd-69a3-47f5-a90b-8bd88f6e894f","type":"SaveTool"},{"attributes":{"fill_color":{"field":"fill_color"},"height":{"units":"data","value":13},"line_color":{"field":"line_color"},"width":{"units":"data","value":30},"x":{"field":"x"},"y":{"field":"y"}},"id":"c41e4729-1245-438a-907e-3c524646ead0","type":"Rect"},{"attributes":{"text_align":"center","text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"8pt"},"x":{"value":0},"y":{"field":"y"}},"id":"4ab14ecd-24e4-4f4f-9db2-8ac4175f5832","type":"Text"},{"attributes":{"text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"9pt"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1f14def7-1f3e-4b07-8d8d-bb14b21a1921","type":"Text"},{"attributes":{"border_fill_color":{"value":"#f0e1d2"},"min_border":0,"outline_line_color":{"value":null},"plot_height":800,"plot_width":800,"renderers":[{"id":"176601d0-d918-46bb-a331-89c360c1ae28","type":"BoxAnnotation"},{"id":"fff5e5f4-08ad-4dbb-96bd-9c987476cc77","type":"GlyphRenderer"},{"id":"163fd350-d43c-4802-bdf8-881e3f8535a4","type":"GlyphRenderer"},{"id":"fed8777f-59fa-4f47-ad41-fe948456ad32","type":"GlyphRenderer"},{"id":"297d0090-a64c-4978-9034-27a40d772826","type":"GlyphRenderer"},{"id":"7410f982-87c9-4be9-a614-bba135381c7b","type":"GlyphRenderer"},{"id":"c1cf6b38-6423-4528-94c0-c5f39a3a02b7","type":"GlyphRenderer"},{"id":"cfdd41c0-ce73-4cfa-abbb-59b2acefd6ba","type":"GlyphRenderer"},{"id":"f6663e05-72e4-4b75-8a5f-807e2a77190b","type":"GlyphRenderer"},{"id":"48a09d6a-99ab-42ed-afd6-9b24657cdfef","type":"GlyphRenderer"},{"id":"e1d6125a-dc45-49ef-bc81-fc720ba48818","type":"GlyphRenderer"}],"title":{"id":"23cb041e-b6df-40a2-ae87-e72ff1b8c44c","type":"Title"},"tool_events":{"id":"2ca2292c-ff6a-407b-a327-cc8471e55d6f","type":"ToolEvents"},"toolbar":{"id":"dec59583-fbe0-45f5-b0a1-5b6ea69e0999","type":"Toolbar"},"toolbar_sticky":false,"x_range":{"id":"ae409951-4913-4dc3-9cd6-4a06a877ec19","type":"Range1d"},"y_range":{"id":"e4a4d9ea-bb24-47c8-8fb6-39626df89c8f","type":"Range1d"}},"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_color":{"value":"#206F1D"},"inner_radius":{"units":"data","value":90},"line_color":{"value":"#206F1D"},"outer_radius":{"field":"outer_radius","units":"data"},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"16b30644-9110-4b27-b150-d53a38e8f0fa","type":"AnnularWedge"},{"attributes":{"plot":{"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"}},"id":"88bd28da-c1ab-464e-84e3-813bf1a9c2cf","type":"ResetTool"},{"attributes":{"data_source":{"id":"3309298c-064d-4229-9c23-8a513b976aab","type":"ColumnDataSource"},"glyph":{"id":"c41e4729-1245-438a-907e-3c524646ead0","type":"Rect"},"hover_glyph":null,"nonselection_glyph":{"id":"09c2034a-e273-45d6-a3ed-b47f2b5fd3c8","type":"Rect"},"selection_glyph":null},"id":"48a09d6a-99ab-42ed-afd6-9b24657cdfef","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"c0c741ad-663a-4c8e-9609-882ec29079e8","type":"ColumnDataSource"},"glyph":{"id":"452516d2-ae3d-4b0c-a5b1-c9112fceac26","type":"AnnularWedge"},"hover_glyph":null,"nonselection_glyph":{"id":"b62d23a3-e0eb-4211-a08e-a534f14c0a09","type":"AnnularWedge"},"selection_glyph":null},"id":"cfdd41c0-ce73-4cfa-abbb-59b2acefd6ba","type":"GlyphRenderer"},{"attributes":{"overlay":{"id":"176601d0-d918-46bb-a331-89c360c1ae28","type":"BoxAnnotation"},"plot":{"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"}},"id":"76d9b446-99a9-4182-a10b-e625479bd7b3","type":"BoxZoomTool"},{"attributes":{"plot":{"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"}},"id":"d00716c1-a9fd-487e-8e27-47da0caa3287","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"units":"data","value":13},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"width":{"units":"data","value":30},"x":{"field":"x"},"y":{"field":"y"}},"id":"09c2034a-e273-45d6-a3ed-b47f2b5fd3c8","type":"Rect"},{"attributes":{"callback":null,"column_names":["text"],"data":{"text":["Schutz von Gesundheitsdaten"]}},"id":"d42acf38-05c4-470f-abce-3c34bf145d4e","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"416ae4ea-60bd-415a-9311-b063255010f8","type":"ColumnDataSource"},"glyph":{"id":"c224edcf-cdfc-4da0-86a1-af4f11374f8d","type":"Text"},"hover_glyph":null,"nonselection_glyph":{"id":"1f14def7-1f3e-4b07-8d8d-bb14b21a1921","type":"Text"},"selection_glyph":null},"id":"e1d6125a-dc45-49ef-bc81-fc720ba48818","type":"GlyphRenderer"},{"attributes":{"callback":null,"end":420,"start":-420},"id":"ae409951-4913-4dc3-9cd6-4a06a877ec19","type":"Range1d"},{"attributes":{"angle":{"field":"angle","units":"rad"},"text_align":"center","text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"7pt"},"x":{"field":"x"},"y":{"field":"y"}},"id":"73958cea-b421-4b85-886b-83ab4e7b048f","type":"Text"},{"attributes":{"text_align":"center","text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"23pt"},"x":{"value":0},"y":{"value":390}},"id":"1e3586e7-634d-437d-9185-30e104cd4f7e","type":"Text"},{"attributes":{"callback":null,"column_names":["y","text"],"data":{"text":["0 %","10 %","20 %","30 %","40 %","50 %","60 %"],"y":[89.6661101836394,123.0550918196995,156.44407345575962,189.8330550918197,223.2220367278798,256.61101836393993,290.0]}},"id":"0b0c32f7-0995-433b-98e5-836517bc48e4","type":"ColumnDataSource"},{"attributes":{"text_align":"center","text_alpha":{"value":0.1},"text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"23pt"},"x":{"value":0},"y":{"value":390}},"id":"7aa3b087-ce85-45a4-aabc-95e7777c0e50","type":"Text"},{"attributes":{"end_angle":{"field":"end_angle","units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"inner_radius":{"units":"data","value":90},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"outer_radius":{"field":"outer_radius","units":"data"},"start_angle":{"field":"start_angle","units":"rad"},"x":{"value":0},"y":{"value":0}},"id":"4dc4a14f-dd7f-444c-8390-dd7e40561861","type":"AnnularWedge"},{"attributes":{"angle":{"field":"angle","units":"rad"},"text_align":"center","text_baseline":"middle","text_color":{"value":"black"},"text_font_size":{"value":"7pt"},"x":{"field":"x"},"y":{"field":"y"}},"id":"8ec6ef6a-59c8-4bb0-afbc-c3bce47aae4b","type":"Text"},{"attributes":{"fill_color":{"value":null},"line_color":{"value":"white"},"radius":{"field":"radius","units":"data"},"x":{"value":0},"y":{"value":0}},"id":"6a43ee8d-1f21-4047-93c2-8bafd7e706cb","type":"Circle"},{"attributes":{"plot":{"id":"f451b41e-a0cc-4521-9f05-c907adc5bd52","subtype":"Figure","type":"Plot"}},"id":"6915a8a7-8fd0-4275-a373-e890c73faa14","type":"WheelZoomTool"}],"root_ids":["f451b41e-a0cc-4521-9f05-c907adc5bd52"]},"title":"Bokeh Application","version":"0.12.0"}};
+                                var render_items = [{"docid":"37033d24-c2e3-49cf-86a4-e7790e7ff204","elementid":"05545c20-18f4-4387-8637-ea9967b33250","modelid":"f451b41e-a0cc-4521-9f05-c907adc5bd52"}];
+
+                                Bokeh.embed.embed_items(docs_json, render_items);
+                            });
+                            </script>
+
+
+                            <p>The Flying Health Incubator hired me to do analytics on survey data they collected earlier. After cleaning and prepping the data I made a pandas dataframe and a correlation matrix.
+                                The correlation matrix gave a very nice overview, and it made several trends visible. After choosing the most interesting correlations with the Management of the Flying Health Incubator, I made dynamic graphs for the most interesting correlations.
+                                (Note: the data in the graphs is random) </p>
+                            <!--<ul class="list-inline item-details">-->
+                                <!--<li>Client:-->
+                                    <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Date:-->
+                                    <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Service:-->
+                                    <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
+                                    <!--</strong>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -391,7 +441,44 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+   <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/marketmagnify.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -428,7 +515,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -465,7 +552,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
