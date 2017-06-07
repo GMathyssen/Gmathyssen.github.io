@@ -149,16 +149,16 @@
                         <img src="img/portfolio/plot2_v3crop.png" class="img-responsive" alt="Game controller">
                     </a>
                 </div>
-                <!--<div class="col-sm-4 portfolio-item">-->
-                    <!--<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">-->
-                        <!--<div class="caption">-->
-                            <!--<div class="caption-content">-->
-                                <!--<i class="fa fa-search-plus fa-3x"></i>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<img src="img/portfolio/bokeh_plotbLGREEN.png" class="img-responsive" alt="Safe">-->
-                    <!--</a>-->
-                <!--</div>-->
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sensor1_small.png" class="img-responsive" alt="Safe">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -174,7 +174,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1">
-                    <p>I'm a data scientist with 3+ years experience in Python, Excel and SQL. I hold a Master's degree in Electromechanical Engineering. While working as an EM Engineer (3+ years) I also gained experience in modelling by building models to calculate the ROI for renewable energy technology's (PV, CHP, heat pumps).
+                    <p>I'm a data scientist with 3+ years experience in Python, Excel and Tensorflow. I hold a Master's degree in Electromechanical Engineering. While working as an EM Engineer (3+ years) I also gained experience in modelling by building models to calculate the ROI for renewable energy technology's (PV, CHP, heat pumps).
                     </p>
                 </div>
                 <div class="col-lg-5">
@@ -274,25 +274,13 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                         <div class="modal-body">
                             <h2>Neural network for object recognition</h2>
                             <hr class="star-primary">
-                            <p>Use this area of the page to describe your</p>
-
-                            <iframe src="https://player.vimeo.com/video/211504616" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            <!--<p><a href="https://vimeo.com/211504616">Demo of conventional neural network</a> from <a href="https://vimeo.com/user28223932">Gert math</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
-                            <p>Use this area of the page to describe your</p>
-                            <ul class="list-inline item-details">
-                                <!--<li>Client:-->
-                                    <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                                <!--<li>Date:-->
-                                    <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                                <!--<li>Service:-->
-                                    <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                            </ul>
+                            <p>A Belgium robotics company hired me to solve a problem:
+                                Crates filled with toys are coming by on a conveyor belt, because the crates go into an
+                                automated storage unit they need to get a label of what is inside. This is where my
+                                solution comes in. I have built a deep convolutional neural network (DCN) to process an
+                                image taken from the content of the crate, to determine what parts are in the crate.</p>
+                            <p>Below you can find a demo video I have made this for the customer, as a prove of concept. The demo only works with 5 different items, the final neural network in production can distinguish between 25 parts.</p>
+                            <iframe src="https://player.vimeo.com/video/211504616" width="640" height="360" frameborder="0"                             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -315,21 +303,10 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                             <h2>Market Magnify</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/MM.png" class="img-responsive img-centered" alt="">
-                            <p>I've built this potential cash cow project, but unfortunately I had to shut it down because there was not enough traction. (the connection with the stock exchange is cancelled, so there is no new data) <a href="http://market-magnify.com">here</a>.</p>
-                            <!--<ul class="list-inline item-details">-->
-                                <!--<li>Client:-->
-                                    <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                                <!--<li>Date:-->
-                                    <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                                <!--<li>Service:-->
-                                    <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                            <!--</ul>-->
+                            <p>I've built this personal project as a potential cash cow project, but unfortunately I had to shut it down because there was not enough traction (the connection with the stock exchange is cancelled, so there is no new realtime data anymore).  You can visit the website <a href="http://market-magnify.com">here</a>.</p>
+                            <p>This is one of my bigger projects and I did everything myself, this includes writing: Python back end with PortgresSQL database, front end in HTML and javascript with Django, the bokeh visualisation and the bokeh server behind it and the search algoritme to find the events in the big data.
+Because I was curious how it worked, I also did the ubuntu servers setup myself.</p>
+
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -383,20 +360,6 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                             <p>The Flying Health Incubator hired me to do analytics on survey data they collected earlier. After cleaning and prepping the data I made a pandas dataframe and a correlation matrix.
                                 The correlation matrix gave a very nice overview, and it made several trends visible. After choosing the most interesting correlations with the Management of the Flying Health Incubator, I made dynamic graphs for the most interesting correlations.
                                 (Note: the data in the graphs is random) </p>
-                            <!--<ul class="list-inline item-details">-->
-                                <!--<li>Client:-->
-                                    <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                                <!--<li>Date:-->
-                                    <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                                <!--<li>Service:-->
-                                    <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
-                                    <!--</strong>-->
-                                <!--</li>-->
-                            <!--</ul>-->
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -416,24 +379,12 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Sport data visualisation</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/plot2_v3_small.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/plot3_v1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/plot1_v3_small.png" class="img-responsive img-centered" alt="">
+                            <p>This was a small project. A customer had a dataset of a number of sport games, and needed some data visualisation. I’ve used a Jupiter Notebook to do the data wrangling and prepping for the visualisations below. The library used to do the visualisations was Seaborn.</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -453,24 +404,12 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Air sensor calculations</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/marketmagnify.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <p>On Upwork I’ve got a question if I could automate the data processing of an air sensor. I was happy to do this job and it ended up to be a very fun one, this because I could combine my engineering and programming skills.  Because the costumer needed the option to still tweak and change my formulas in production we decided to work with a Jupiter Notebook. The basic graphs below were the results after the calculation, made with Matplotlib.</p>
+                            <img src="img/portfolio/sensor3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sensor5.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/sensor4.png" class="img-responsive img-centered" alt="">
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
