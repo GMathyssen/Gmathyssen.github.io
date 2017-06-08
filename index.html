@@ -33,18 +33,19 @@
     <script type="text/javascript">
         Bokeh.set_log_level("info");
     </script>
-            <style>
-              html {
-                width: 100%;
-                height: 100%;
-              }
-              body {
-                width: 90%;
-                height: 100%;
-                margin: auto;
-              }
-            </style>
+    <style>
+      body {
+        overflow-x: hidden;
+        font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+      }
+        #intro-img {
+          padding-bottom: 50px;
+        }
 
+        #portfolio {
+          padding-top: 50px;
+        }
+    </style>
 </head>
 
 <body id="page-top" class="index">
@@ -99,11 +100,17 @@
         </div>
     </header>
 
+    <!-- mid Grid Section -->
+    <!--<section id="mid">-->
+    <!--</section>-->
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                    <div id="intro-img">
+                        <img src="img/mid_section.png" class="img-responsive img-centered">
+                    </div>
                     <h2>Portfolio</h2>
                     <hr class="star-primary2">
                 </div>
@@ -174,13 +181,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1">
-                    <p>I'm a data scientist with 3+ years experience in Python, Excel and Tensorflow. I hold a Master's degree in Electromechanical Engineering. While working as an EM Engineer (3+ years) I also gained experience in modelling by building models to calculate the ROI for renewable energy technology's (PV, CHP, heat pumps).
+                    <p>I'm a data scientist with 3+ years experience in Python, SQL and Excel. The last year I have been focusing on Machine learning (Scikit-learn and Tensorflow) and I'm really passionate about it, so it would me nice to do more ML projects!<br><br>
+                        I hold a Master's degree in Electromechanical Engineering. While working as an EM Engineer (3+ years) I also gained experience in modelling by building models to calculate the ROI for renewable energy technology's (PV, CHP, heat pumps).
                     </p>
                 </div>
                 <div class="col-lg-5">
-                    <p>The last year I have been focusing on Machine learning (Scikit-learn and Tensorflow) and I'm really passionate about it, so it would me nice to do more ML projects!
-
-Python libraries I mainly use: Numpy, Pandas, Matplotlib, Plotly, Seaborn, Bokeh (server), Scikit-learn, Jupyter notebook, Django, Flask and many more.
+                    <p>
+Python libraries I mainly use: Numpy, Pandas, Matplotlib, Plotly, Seaborn, Bokeh (server), Scikit-learn, Jupyter notebook, Django, Flask and many more. <br><br> Other tech skills: AutoCAD, Autodesk Inventor, Dialux
 
 Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                 </div>
@@ -214,26 +221,26 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <!--<div class="footer-col col-md-4">-->
+                    <div class="footer-col col-md-4">
                         <!--<h3>Location</h3>-->
                         <!--<p>3481 Melrose Place-->
-                            <!--<br>Beverly Hills, CA 90210</p>-->
-                    <!--</div>-->
-                    <!--<div class="footer-col col-md-4">-->
-                        <!--<h3>Around the Web</h3>-->
-                        <!--<ul class="list-inline">-->
+                            <!--</p>-->
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
                             <!--<li>-->
                                 <!--<a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>-->
                             <!--</li>-->
-                            <!--<li>-->
-                                <!--<a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>-->
-                            <!--</li>-->
-                            <!--<li>-->
-                                <!--<a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>-->
-                            <!--</li>-->
+                            <li>
+                                <a href="https://twitter.com/gertmath" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://de.linkedin.com/in/gertmathyssen" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
 
-                        <!--</ul>-->
-                    <!--</div>-->
+                        </ul>
+                    </div>
                     <!--<div class="footer-col col-md-4">-->
                         <!--<h3>About Freelancer</h3>-->
                         <!--<p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>-->
@@ -274,13 +281,10 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                         <div class="modal-body">
                             <h2>Neural network for object recognition</h2>
                             <hr class="star-primary">
-                            <p>A Belgium robotics company hired me to solve a problem:
-                                Crates filled with toys are coming by on a conveyor belt, because the crates go into an
-                                automated storage unit they need to get a label of what is inside. This is where my
-                                solution comes in. I have built a deep convolutional neural network (DCN) to process an
-                                image taken from the content of the crate, to determine what parts are in the crate.</p>
-                            <p>Below you can find a demo video I have made this for the customer, as a prove of concept. The demo only works with 5 different items, the final neural network in production can distinguish between 25 parts.</p>
+                            <p>A Belgium robotics company hired me to solve a problem: Crates filled with toys are coming by on a conveyor belt, because the crates will go into an automated storage unit they need to get a label of what is inside. <br>This is where my solution comes in. I have built a deep convolutional neural network (DCN) to process an image taken from the content of the crate, this to determine what items are in the crate.</p>
+                            <p>You can find below a demo video I have made for the customer, as a prove of concept. The demo only works with 5 different items, the final neural network in production can distinguish between 25 different items.</p>
                             <iframe src="https://player.vimeo.com/video/211504616" width="640" height="360" frameborder="0"                             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <p></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -303,9 +307,16 @@ Other tech skills: AutoCAD, Autodesk Inventor, Dialux</p>
                             <h2>Market Magnify</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/MM.png" class="img-responsive img-centered" alt="">
-                            <p>I've built this personal project as a potential cash cow project, but unfortunately I had to shut it down because there was not enough traction (the connection with the stock exchange is cancelled, so there is no new realtime data anymore).  You can visit the website <a href="http://market-magnify.com">here</a>.</p>
-                            <p>This is one of my bigger projects and I did everything myself, this includes writing: Python back end with PortgresSQL database, front end in HTML and javascript with Django, the bokeh visualisation and the bokeh server behind it and the search algoritme to find the events in the big data.
-Because I was curious how it worked, I also did the ubuntu servers setup myself.</p>
+                            <p>This is one of my bigger projects. I did everything myself, this includes writing the:</p>
+                                 <ul class="list">
+                                  <li>Python back end with PortgresSQL database</li>
+                                     <li>Search algoritme to find the events in the big dataset</li>
+                                  <li>Front end in HTML and javascript with Django</li>
+                                  <li>Bokeh visualisation and the bokeh server behind it</li>
+                                </ul>
+
+                            <p>I've built this personal project as a potential cash cow project, but unfortunately I had to shut it down because there was not enough traction. The connection with the stock exchange is cancelled, so there is no new realtime data anymore.
+<br>You can visit the website <a href="http://market-magnify.com">here</a>.</p>
 
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -326,7 +337,7 @@ Because I was curious how it worked, I also did the ubuntu servers setup myself.
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Survey data analysis </h2>
                             <hr class="star-primary">
 
                             <div class="bk-root">
@@ -381,10 +392,10 @@ Because I was curious how it worked, I also did the ubuntu servers setup myself.
                         <div class="modal-body">
                             <h2>Sport data visualisation</h2>
                             <hr class="star-primary">
+                                                        <p>This was a small project. A customer had a dataset of a number of sport games, and needed some data visualisation. I’ve used a Jupiter Notebook to do the data wrangling and prepping for the visualisations below. The library used to do the visualisations was Seaborn.</p>
                             <img src="img/portfolio/plot2_v3_small.png" class="img-responsive img-centered" alt="">
                             <img src="img/portfolio/plot3_v1.png" class="img-responsive img-centered" alt="">
                             <img src="img/portfolio/plot1_v3_small.png" class="img-responsive img-centered" alt="">
-                            <p>This was a small project. A customer had a dataset of a number of sport games, and needed some data visualisation. I’ve used a Jupiter Notebook to do the data wrangling and prepping for the visualisations below. The library used to do the visualisations was Seaborn.</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -406,7 +417,7 @@ Because I was curious how it worked, I also did the ubuntu servers setup myself.
                         <div class="modal-body">
                             <h2>Air sensor calculations</h2>
                             <hr class="star-primary">
-                            <p>On Upwork I’ve got a question if I could automate the data processing of an air sensor. I was happy to do this job and it ended up to be a very fun one, this because I could combine my engineering and programming skills.  Because the costumer needed the option to still tweak and change my formulas in production we decided to work with a Jupiter Notebook. The basic graphs below were the results after the calculation, made with Matplotlib.</p>
+                            <p>On Upwork a private person asked me the question if I could automate the data processing of an air sensor. I was happy to do this job and it ended up to be a very fun one, this because I could combine my engineering and programming skills.  Because the costumer needed the option to still tweak and change my formulas in production we decided to work with a Jupiter Notebook. The graphs below were the results after the calculation.</p>
                             <img src="img/portfolio/sensor3.png" class="img-responsive img-centered" alt="">
                             <img src="img/portfolio/sensor5.png" class="img-responsive img-centered" alt="">
                             <img src="img/portfolio/sensor4.png" class="img-responsive img-centered" alt="">
